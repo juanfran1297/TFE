@@ -1,0 +1,27 @@
+-Trozos de madera que se pueden romper cuando les disparas.
+
+-Coleccionable que puedes coger colisionando contra él. Debe haber un contador que indique cuantos llevas de todos los que puedes conseguir.
+
+-Zonas en las que al pasar por ellas puede aparecer una caja de texto (tutorial).
+
+-Plataforma que va hacia la derecha sobre el agua.
+
+-Zonas en las que mientras estes dentro de ellas la camara pueda verse alterada (con una ampliación del field of view, por ejemplo).
+
+-Zona de muerte para una caida al vacío.
+
+-Muerte para el contacto con los pinchos.
+
+-Pinchos que suben y bajan cada x tiempo.
+
+-Botón que al pasar por encima o dispararle hace que un bloque/puerta suba o baje.
+
+-Plataforma movil que se mueve de izquierda a derecha y de derecha a izquierda.
+
+-Enemigo que "patrulla", es decir se mueve de un punto A hasta un punto B y cuando te acercas camina hacia a ti y te hace daño al entrar en contacto contigo (El cangrejo por ejemplo).
+
+-Enemigo a distancia que se mantiene en una zona y cuando entras en su rango de alcance te dispara un proyectil en linea recta (El enemigo coco con la cervatana).
+
+-Una noria con cuatro plataformas en las que el jugador puede subirse encima (Aunque cabe decir que esta parte es más de rigging que de programación quizás).
+
+-Lo último sería las mecánicas del boss pero esas serán detalladas en un documento aparte.

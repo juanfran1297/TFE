@@ -43,11 +43,8 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        if(recibeDamage == true)
-        {
-            return;
-        }
         EnSuelo();
+
         if(playerActor.estaMuerto == true)
         {
             rigidBody.constraints = RigidbodyConstraints.FreezeAll;
@@ -81,60 +78,62 @@ public class PlayerController : MonoBehaviour
     #region EnSuelo
     private void EnSuelo()
     {
-        #region Salto
-        Debug.DrawRay(groundCheck.position, Vector3.down, Color.green);
-        RaycastHit hit;
-        if (Physics.Raycast(groundCheck.position, Vector3.down, out hit, groundDistance))
+        if (recibeDamage == false)
         {
-            canJump = true;
-            playerAnim.SetBool("PuedeSaltar", true);
-        }
-        else
-        {
-            canJump = false;
-            playerAnim.SetBool("PuedeSaltar", false);
-        }
-        #endregion
-
-        #region Rotación
-
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            targetRotation = new Vector3(0, 90, 0);
-            q = Quaternion.Euler(targetRotation);
-            playerAnim.SetFloat("movH", Input.GetAxis("Horizontal"));
-            playerAnim.SetBool("estoyAndando", true);
-        }
-        else if ((Input.GetAxis("Horizontal") < 0))
-        {
-            targetRotation = new Vector3(0, -90, 0);
-            q = Quaternion.Euler(targetRotation);
-            playerAnim.SetFloat("movH", -Input.GetAxis("Horizontal"));
-            playerAnim.SetBool("estoyAndando", true);
-        }
-        else if((Input.GetAxis("Horizontal") == 0))
-        {
-            playerAnim.SetBool("estoyAndando", false);
-        }
-
-        transform.rotation = Quaternion.Lerp(transform.rotation, q, speedRotation * Time.deltaTime);
-        #endregion
-
-        #region Salto
-        if (canJump)
-        {
-            if(isSlopeRight || isSlopeLeft)
+            #region Salto
+            Debug.DrawRay(groundCheck.position, Vector3.down, Color.green);
+            RaycastHit hit;
+            if (Physics.Raycast(groundCheck.position, Vector3.down, out hit, groundDistance))
             {
-                return;
+                canJump = true;
+                playerAnim.SetBool("PuedeSaltar", true);
             }
-            if (Input.GetKeyDown(KeyCode.Space))
+            else
             {
-                rigidBody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
-                playerAnim.SetTrigger("Salto");
+                canJump = false;
+                playerAnim.SetBool("PuedeSaltar", false);
             }
-        }
-        #endregion
+            #endregion
 
+            #region Rotación
+
+            if (Input.GetAxis("Horizontal") > 0)
+            {
+                targetRotation = new Vector3(0, 90, 0);
+                q = Quaternion.Euler(targetRotation);
+                playerAnim.SetFloat("movH", Input.GetAxis("Horizontal"));
+                playerAnim.SetBool("estoyAndando", true);
+            }
+            else if ((Input.GetAxis("Horizontal") < 0))
+            {
+                targetRotation = new Vector3(0, -90, 0);
+                q = Quaternion.Euler(targetRotation);
+                playerAnim.SetFloat("movH", -Input.GetAxis("Horizontal"));
+                playerAnim.SetBool("estoyAndando", true);
+            }
+            else if ((Input.GetAxis("Horizontal") == 0))
+            {
+                playerAnim.SetBool("estoyAndando", false);
+            }
+
+            transform.rotation = Quaternion.Lerp(transform.rotation, q, speedRotation * Time.deltaTime);
+            #endregion
+
+            #region Salto
+            if (canJump)
+            {
+                if (isSlopeRight || isSlopeLeft)
+                {
+                    return;
+                }
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    rigidBody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
+                    playerAnim.SetTrigger("Salto");
+                }
+            }
+            #endregion
+        }
         //Rampas();
     }
     #endregion

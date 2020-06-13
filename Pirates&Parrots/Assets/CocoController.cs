@@ -5,8 +5,8 @@ using UnityEngine;
 public class CocoController : MonoBehaviour
 {
     // Adjust the speed for the application.
-    public float speed = 1.0f;
-    public float attackSpeed = 5.0f;
+    public float speed;
+    public float attackSpeed;
     // Move our position a step closer to the target.
     float step;
     float attackStep;
@@ -21,14 +21,18 @@ public class CocoController : MonoBehaviour
     public Vector3 sitioAtaque;
 
     public LayerMask playerLayer;
+    public float detectionRange;
 
-    public Animator pajaroAnim;
+    public Animator cocoAnim;
     private void Start()
     {
         isAttack = false;
         step = speed * Time.deltaTime; // calculate distance to move
         attackStep = attackSpeed * Time.deltaTime;
-        pajaroAnim = GetComponent<Animator>();
+        cocoAnim = GetComponent<Animator>();
+
+        speed = 2f;
+        attackSpeed = 5f;
     }
 
     void GotoNextPoint()
@@ -45,11 +49,11 @@ public class CocoController : MonoBehaviour
     {
         // Display the explosion radius when selected
         Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, 6f);
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
     void Update()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 6f, playerLayer);
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, detectionRange, playerLayer);
         if (hitColliders.Length > 0)
         {
             player = hitColliders[0].transform.position;
@@ -64,20 +68,26 @@ public class CocoController : MonoBehaviour
         {
             // Set the agent to go to the currently selected destination.
             transform.position = Vector3.MoveTowards(transform.position, targets[destTarget].position, step);
+            transform.LookAt(targets[destTarget]);
 
             // Check if the position of the cube and sphere are approximately equal.
             if (Vector3.Distance(transform.position, targets[destTarget].position) < 0.001f)
             {
                 GotoNextPoint();
             }
-            pajaroAnim.SetBool("Ataque", false);
+            cocoAnim.SetBool("VistaPlayer", false);
         }
 
         else if (isAttack == true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, player, attackStep);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.x, transform.position.y, player.z), attackStep);
             transform.LookAt(player);
-            pajaroAnim.SetBool("Ataque", true);
+            cocoAnim.SetBool("VistaPlayer", true);
+        }
+
+        if(Vector3.Distance(player, transform.position) < 3f)
+        {
+            cocoAnim.SetTrigger("Ataque");
         }
     }
 }

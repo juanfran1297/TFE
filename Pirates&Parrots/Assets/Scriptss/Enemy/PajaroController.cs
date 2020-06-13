@@ -24,6 +24,7 @@ public class PajaroController : MonoBehaviour
     public Vector3 sitioAtaque;
 
     public LayerMask playerLayer;
+    public float detectionRange;
 
     public Animator pajaroAnim;
     private void Start()
@@ -32,6 +33,9 @@ public class PajaroController : MonoBehaviour
         step = speed * Time.deltaTime; // calculate distance to move
         attackStep = attackSpeed * Time.deltaTime;
         pajaroAnim = GetComponent<Animator>();
+
+        speed = 3f;
+        attackSpeed = 5f;
     }
 
     void GotoNextPoint()
@@ -48,11 +52,11 @@ public class PajaroController : MonoBehaviour
     {
         // Display the explosion radius when selected
         Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, 6f);
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
     void Update()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 6f, playerLayer);
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, detectionRange, playerLayer);
         if (hitColliders.Length > 0)
         {
             player = hitColliders[0].transform.position;

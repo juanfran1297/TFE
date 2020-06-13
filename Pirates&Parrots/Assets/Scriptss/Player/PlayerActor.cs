@@ -83,7 +83,5 @@ public class PlayerActor : Actor
             Lifes[i].enabled = false;
         }
     }
-
-    
 }
 

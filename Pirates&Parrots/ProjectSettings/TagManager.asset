@@ -10,6 +10,7 @@ TagManager:
   - Fire
   - Slope
   - Dead
+  - Water
   layers:
   - Default
   - TransparentFX

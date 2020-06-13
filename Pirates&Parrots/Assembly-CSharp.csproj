@@ -200,43 +200,43 @@
     <None Include="Assets\Scriptss\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/PROYECTO_FINAL/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -414,12 +414,6 @@
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

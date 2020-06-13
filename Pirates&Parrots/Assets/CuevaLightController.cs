@@ -62,6 +62,7 @@ public class CuevaLightController : MonoBehaviour
 
 
             Oscurece = true;
+            Amanece = false;
         }
 
     }
@@ -75,6 +76,7 @@ public class CuevaLightController : MonoBehaviour
             SpotLight2.SetBool("Apaga", false);
 
             Amanece = true;
+            Oscurece = false;
 
         }
     }

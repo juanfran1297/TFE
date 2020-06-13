@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: b0a12af1e7984df49a48489ff366f798
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Salto
+  - first:
+      74: -8687897861681852680
+    second: PoseSalto
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Salto
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 5
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: PoseSalto
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 7
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: jump2(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Esqueleto
+      parentName: jump2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Root_jnt
+      parentName: EntregaAnimacion3D_1:Esqueleto
+      position: {x: 0.00000009872019, y: 0.66403383, z: 0.03278072}
+      rotation: {x: 0.4721327, y: 0.52639407, z: 0.4721327, w: 0.52639407}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Columna_1_jnt
+      parentName: EntregaAnimacion3D_1:Root_jnt
+      position: {x: -0, y: 0.0035299768, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9998279, w: 0.018551981}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Columna_2_jnt
+      parentName: EntregaAnimacion3D_1:Columna_1_jnt
+      position: {x: -0.06828921, y: -0.001204132, z: -0.001911515}
+      rotation: {x: 0, y: 0, z: 0.0028498112, w: 0.99999595}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Columna_3_jnt
+      parentName: EntregaAnimacion3D_1:Columna_2_jnt
+      position: {x: -0.07307628, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.02519165, w: 0.99968266}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Columna_4_jnt
+      parentName: EntregaAnimacion3D_1:Columna_3_jnt
+      position: {x: -0.072305515, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.026229877, w: 0.99965596}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Columna_5_jnt
+      parentName: EntregaAnimacion3D_1:Columna_4_jnt
+      position: {x: -0.08680858, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.042799663, w: 0.9990837}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa1_jnt
+      parentName: EntregaAnimacion3D_1:Columna_5_jnt
+      position: {x: -0.1218243, y: 0.10299114, z: 0.026438842}
+      rotation: {x: -0.29417676, y: 0.95566636, z: 0.0021000747, w: 0.012552356}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa2_jnt
+      parentName: EntregaAnimacion3D_1:Capa1_jnt
+      position: {x: -0.0559616, y: 0, z: 0}
+      rotation: {x: 7.2743235e-11, y: 1.1856445e-11, z: 0.16086757, w: 0.986976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa3_jnt
+      parentName: EntregaAnimacion3D_1:Capa2_jnt
+      position: {x: -0.06315541, y: 0, z: 0}
+      rotation: {x: -1.4849372e-10, y: -3.5656614e-12, z: 0.024005288, w: 0.9997119}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa4_jnt
+      parentName: EntregaAnimacion3D_1:Capa3_jnt
+      position: {x: -0.06629716, y: 0, z: 0}
+      rotation: {x: 3.3045802e-10, y: 1.2444312e-11, z: 0.037631094, w: 0.9992917}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa5_jnt
+      parentName: EntregaAnimacion3D_1:Capa4_jnt
+      position: {x: -0.06546752, y: 0, z: 0}
+      rotation: {x: -1.2891478e-10, y: 4.0061383e-12, z: -0.03106087, w: 0.9995175}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa6_jnt
+      parentName: EntregaAnimacion3D_1:Capa5_jnt
+      position: {x: -0.064552166, y: 0, z: 0}
+      rotation: {x: -1.02126745e-10, y: -1.7221976e-12, z: 0.016860938, w: 0.99985784}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa7_jnt
+      parentName: EntregaAnimacion3D_1:Capa6_jnt
+      position: {x: -0.06885417, y: 0, z: 0}
+      rotation: {x: 1.14945845e-10, y: -6.36239e-14, z: -0.0005535119, w: 0.9999999}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa8_jnt
+      parentName: EntregaAnimacion3D_1:Capa7_jnt
+      position: {x: -0.082916975, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0028057096, w: 0.99999607}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa9_jnt
+      parentName: EntregaAnimacion3D_1:Capa8_jnt
+      position: {x: -0.081458166, y: 0, z: 0}
+      rotation: {x: -6.92352e-11, y: -4.1129554e-13, z: 0.005940451, w: 0.99998236}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa10_jnt
+      parentName: EntregaAnimacion3D_1:Capa9_jnt
+      position: {x: -0.08968234, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0011847994, w: 0.9999993}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Capa11_jnt
+      parentName: EntregaAnimacion3D_1:Capa10_jnt
+      position: {x: -0.113628305, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Cuello_jnt
+      parentName: EntregaAnimacion3D_1:Columna_5_jnt
+      position: {x: -0.13901645, y: -0.011350306, z: 0}
+      rotation: {x: 0.018009357, y: -0.026900696, z: 0.04432384, w: 0.9984926}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Cabeza_jnt
+      parentName: EntregaAnimacion3D_1:Cuello_jnt
+      position: {x: -0.22526163, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.014646335, w: 0.9998928}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Cabeza_end_jnt
+      parentName: EntregaAnimacion3D_1:Cabeza_jnt
+      position: {x: -0.5049543, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_Clavicula_jnt
+      parentName: EntregaAnimacion3D_1:Columna_5_jnt
+      position: {x: -0.13460965, y: -0.0005225291, z: -0.08961964}
+      rotation: {x: -0.4006413, y: 0.58325785, z: -0.564543, w: -0.4249566}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_hombro_jnt
+      parentName: EntregaAnimacion3D_1:L_Clavicula_jnt
+      position: {x: -0.13518547, y: 0, z: 0}
+      rotation: {x: 0.4331938, y: -0.060744777, z: -0.12629156, w: 0.890339}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_codo_jnt
+      parentName: EntregaAnimacion3D_1:L_hombro_jnt
+      position: {x: -0.166117, y: 0, z: 0}
+      rotation: {x: 0.002724438, y: 0.014217976, z: -0.021996582, w: 0.9996532}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_mano_jnt
+      parentName: EntregaAnimacion3D_1:L_codo_jnt
+      position: {x: -0.20259318, y: 0, z: 0}
+      rotation: {x: -0.027338525, y: -0.050788626, z: -0.026048133, w: 0.9979953}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_anular_start_jnt
+      parentName: EntregaAnimacion3D_1:L_mano_jnt
+      position: {x: -0.029635556, y: 0.0007311978, z: -0.011690986}
+      rotation: {x: 0.03990519, y: 0.098098785, z: -0.019396922, w: 0.9941871}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_anular_1_jnt
+      parentName: EntregaAnimacion3D_1:L_anular_start_jnt
+      position: {x: -0.07621462, y: 0, z: 0}
+      rotation: {x: -0.0011834423, y: -0.00028711546, z: 0.024219783, w: 0.999706}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_anular_2_jnt
+      parentName: EntregaAnimacion3D_1:L_anular_1_jnt
+      position: {x: -0.031120818, y: 0, z: 0}
+      rotation: {x: 0.006787544, y: 0.009938477, z: -0.028069122, w: 0.99953353}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_anular_3_jnt
+      parentName: EntregaAnimacion3D_1:L_anular_2_jnt
+      position: {x: -0.026997974, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_dedoMedio_start_jnt
+      parentName: EntregaAnimacion3D_1:L_mano_jnt
+      position: {x: -0.03593913, y: -0.00070010324, z: 0.012696985}
+      rotation: {x: 0.043394934, y: 0.101341926, z: -0.02960964, w: 0.99346364}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_dedoMedio_1_jnt
+      parentName: EntregaAnimacion3D_1:L_dedoMedio_start_jnt
+      position: {x: -0.07144337, y: 0, z: 0}
+      rotation: {x: -0.002174686, y: -0.0014381554, z: 0.027191987, w: 0.99962693}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_dedoMedio_2_jnt
+      parentName: EntregaAnimacion3D_1:L_dedoMedio_1_jnt
+      position: {x: -0.029777808, y: 0, z: 0}
+      rotation: {x: -0.008424179, y: -0.005547885, z: 0.038365856, w: 0.99921286}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_dedoMedio_3_jnt
+      parentName: EntregaAnimacion3D_1:L_dedoMedio_2_jnt
+      position: {x: -0.031394962, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_indice_start_jnt
+      parentName: EntregaAnimacion3D_1:L_mano_jnt
+      position: {x: -0.042332005, y: -0.0019957207, z: 0.03453038}
+      rotation: {x: 0.039773107, y: 0.10221692, z: -0.03379148, w: 0.99339217}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_indice_1_jnt
+      parentName: EntregaAnimacion3D_1:L_indice_start_jnt
+      position: {x: -0.0636334, y: 0, z: 0}
+      rotation: {x: -0.0005193128, y: -0.0070811785, z: 0.031323735, w: 0.99948406}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_indice_2_jnt
+      parentName: EntregaAnimacion3D_1:L_indice_1_jnt
+      position: {x: -0.032383706, y: 0, z: 0}
+      rotation: {x: 0.00080627936, y: 0.0012185229, z: 0.03955871, w: 0.9992162}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_indice_3_jnt
+      parentName: EntregaAnimacion3D_1:L_indice_2_jnt
+      position: {x: -0.034532696, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_menique_start_jnt
+      parentName: EntregaAnimacion3D_1:L_mano_jnt
+      position: {x: -0.02797481, y: 0.002039457, z: -0.035431307}
+      rotation: {x: 0.03164408, y: 0.095559604, z: -0.0031745718, w: 0.9949156}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_menique_1_jnt
+      parentName: EntregaAnimacion3D_1:L_menique_start_jnt
+      position: {x: -0.076454036, y: 0, z: 0}
+      rotation: {x: 0.0070713703, y: 0.0031296082, z: 0.029146733, w: 0.9995452}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_menique_2_jnt
+      parentName: EntregaAnimacion3D_1:L_menique_1_jnt
+      position: {x: -0.023615852, y: 0, z: 0}
+      rotation: {x: 0.024123976, y: 0.00526327, z: 0.03374345, w: 0.9991255}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_menique_3_jnt
+      parentName: EntregaAnimacion3D_1:L_menique_2_jnt
+      position: {x: -0.016290477, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_pulgar_start_jnt
+      parentName: EntregaAnimacion3D_1:L_mano_jnt
+      position: {x: -0.04539469, y: -0.016568732, z: 0.04249536}
+      rotation: {x: 0.6044526, y: 0.10976713, z: -0.4232363, w: 0.6659274}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_pulgar_1_jnt
+      parentName: EntregaAnimacion3D_1:L_pulgar_start_jnt
+      position: {x: -0.031184236, y: 0, z: 0}
+      rotation: {x: -0.0021396568, y: 0.02816991, z: 0.028945351, w: 0.9991817}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_pulgar_2_jnt
+      parentName: EntregaAnimacion3D_1:L_pulgar_1_jnt
+      position: {x: -0.020583669, y: 0, z: 0}
+      rotation: {x: -0.000018442499, y: -0.036503185, z: 0.00016758642, w: 0.99933356}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_pulgar_3_jnt
+      parentName: EntregaAnimacion3D_1:L_pulgar_2_jnt
+      position: {x: -0.022156002, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:R_Clavicula_jnt
+      parentName: EntregaAnimacion3D_1:Columna_5_jnt
+      position: {x: -0.13626519, y: -0.00044937205, z: 0.08611594}
+      rotation: {x: -0.3995826, y: 0.58280236, z: 0.5651566, w: 0.4257619}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:R_hombro_jnt
+      parentName: EntregaAnimacion3D_1:R_Clavicula_jnt
+      position: {x: -0.13668604, y: 0.00006727221, z: -0.000019053396}
+      rotation: {x: -0.0041327905, y: -0.00090399344, z: -0.13920236, w: 0.99025494}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:R_codo_jnt
+      parentName: EntregaAnimacion3D_1:R_hombro_jnt
+      position: {x: -0.17309545, y: 0, z: 0}
+      rotation: {x: -0.0018062138, y: -0.033424728, z: -0.032188933, w: 0.9989211}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:R_mano_jnt
+      parentName: EntregaAnimacion3D_1:R_codo_jnt
+      position: {x: -0.20259324, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Hip_jnt
+      parentName: EntregaAnimacion3D_1:Root_jnt
+      position: {x: -0.0025394403, y: 0.022797031, z: -0.000033043496}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Hip_end_jnt
+      parentName: EntregaAnimacion3D_1:Hip_jnt
+      position: {x: -0.08812368, y: 0, z: 0}
+      rotation: {x: -0.4721327, y: -0.52639407, z: -0.4721327, w: 0.52639407}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_Pierna_jnt
+      parentName: EntregaAnimacion3D_1:Hip_jnt
+      position: {x: -0.09831829, y: -0.0677283, z: -0.12140669}
+      rotation: {x: -0.004037874, y: -0.0006406672, z: 0.014850865, w: 0.9998814}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_rodilla_jnt
+      parentName: EntregaAnimacion3D_1:L_Pierna_jnt
+      position: {x: -0.27004662, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.18188946, w: 0.983319}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_tobillo_jnt
+      parentName: EntregaAnimacion3D_1:L_rodilla_jnt
+      position: {x: -0.19142321, y: 0, z: 0}
+      rotation: {x: 0.0038496433, y: 0.0013766366, z: -0.53688365, w: 0.84364635}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_pie_jnt
+      parentName: EntregaAnimacion3D_1:L_tobillo_jnt
+      position: {x: -0.10639665, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.24168643, w: 0.97035444}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:L_pie_end_jnt
+      parentName: EntregaAnimacion3D_1:L_pie_jnt
+      position: {x: -0.099301934, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:R_Pierna_jnt
+      parentName: EntregaAnimacion3D_1:Hip_jnt
+      position: {x: -0.097864196, y: -0.06575399, z: 0.121472575}
+      rotation: {x: 0.99988973, y: 0.014850783, z: -0.00004061437, w: -0.000022169317}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:R_rodilla_jnt
+      parentName: EntregaAnimacion3D_1:R_Pierna_jnt
+      position: {x: -0.27004674, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.18188876, w: 0.98331916}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:R_tobillo_jnt
+      parentName: EntregaAnimacion3D_1:R_rodilla_jnt
+      position: {x: -0.19142312, y: 0, z: 0}
+      rotation: {x: -0.000014233064, y: 0.000044006574, z: 0.536885, w: 0.8436554}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:R_pie_jnt
+      parentName: EntregaAnimacion3D_1:R_tobillo_jnt
+      position: {x: -0.10639635, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.23709291, w: 0.971487}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:R_pie_end_jnt
+      parentName: EntregaAnimacion3D_1:R_pie_jnt
+      position: {x: -0.09953359, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Root_end_jnt
+      parentName: EntregaAnimacion3D_1:Root_jnt
+      position: {x: -0.08812368, y: 0, z: 0}
+      rotation: {x: -0.4721327, y: -0.52639407, z: -0.4721327, w: 0.52639407}
+      scale: {x: 1, y: 1, z: 1}
+    - name: EntregaAnimacion3D_1:Object022
+      parentName: jump2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 7
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

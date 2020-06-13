@@ -106,10 +106,10 @@ public class Shoot : MonoBehaviour
     IEnumerator Recargar()
     {
         estaRecargando = true;
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.3f);
         numBalas = maxBalas;
 
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(.3f);
         estaRecargando = false;
         for (int i = 0; i < numBalas; i++)
         {

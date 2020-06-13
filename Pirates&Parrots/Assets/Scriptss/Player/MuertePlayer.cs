@@ -8,7 +8,7 @@ public class MuertePlayer : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Destroy(other.gameObject);
+            FindObjectOfType<PlayerActor>().numVidas = 0;
         }
     }
 }

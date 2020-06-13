@@ -47,6 +47,14 @@ public class PlayerController : MonoBehaviour
             rigidBody.constraints = RigidbodyConstraints.FreezeAll;
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "Enemy")
+        {
+            transform.LookAt(collision.transform.position);
+            playerActor.DeleteHeart();
+        }
+    }
 
     private void FixedUpdate()
     {
@@ -71,10 +79,12 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(groundCheck.position, Vector3.down, out hit, groundDistance))
         {
             canJump = true;
+            playerAnim.SetBool("PuedeSaltar", true);
         }
         else
         {
             canJump = false;
+            playerAnim.SetBool("PuedeSaltar", false);
         }
         #endregion
 
@@ -112,6 +122,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 rigidBody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
+                playerAnim.SetTrigger("Salto");
             }
         }
         #endregion

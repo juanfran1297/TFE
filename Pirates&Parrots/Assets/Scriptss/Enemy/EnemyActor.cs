@@ -10,7 +10,6 @@ public class EnemyActor : Actor
     // Start is called before the first frame update
     void Start()
     {
-        maxVida = 2;
         enemyAnim = GetComponent<Animator>();
     }
 

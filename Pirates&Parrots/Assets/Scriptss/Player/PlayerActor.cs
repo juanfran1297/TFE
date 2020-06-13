@@ -6,8 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerActor : Actor
 {
-    [SerializeField]
-    private int numVidas;
+    public int numVidas;
 
     public bool VidaAlMaximo = false;
 
@@ -17,6 +16,7 @@ public class PlayerActor : Actor
     public Transform vidasInventory;
     public Animator playerAnim;
     public bool estaMuerto;
+    public Rigidbody rigibody;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +26,7 @@ public class PlayerActor : Actor
         InstanciarVidas();
         playerAnim = GetComponent<Animator>();
         estaMuerto = false;
+        rigibody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -83,12 +84,6 @@ public class PlayerActor : Actor
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.transform.tag == "Enemy")
-        {
-            DeleteHeart();
-        }
-    }
+    
 }
 

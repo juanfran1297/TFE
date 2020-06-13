@@ -20,14 +20,18 @@ public class PajaroController : MonoBehaviour
 
     public bool isAttack;
 
-    public GameObject player;
+    public Vector3 player;
+    public Vector3 sitioAtaque;
 
     public LayerMask playerLayer;
+
+    public Animator pajaroAnim;
     private void Start()
     {
         isAttack = false;
         step = speed * Time.deltaTime; // calculate distance to move
         attackStep = attackSpeed * Time.deltaTime;
+        pajaroAnim = GetComponent<Animator>();
     }
 
     void GotoNextPoint()
@@ -48,11 +52,10 @@ public class PajaroController : MonoBehaviour
     }
     void Update()
     {
-        //RaycastHit hit;
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, 6f, playerLayer);
         if (hitColliders.Length > 0)
         {
-            player = hitColliders[0].transform.gameObject;
+            player = hitColliders[0].transform.position;
             isAttack = true;
         }
         else
@@ -71,11 +74,14 @@ public class PajaroController : MonoBehaviour
             {
                 GotoNextPoint();
             }
+            pajaroAnim.SetBool("Ataque", false);
         }
+
         else if (isAttack == true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, attackStep);
-            transform.LookAt(player.transform.position);
+            transform.position = Vector3.MoveTowards(transform.position, player, attackStep);
+            transform.LookAt(player);
+            pajaroAnim.SetBool("Ataque", true);
         }
     }
 }

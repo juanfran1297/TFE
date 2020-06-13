@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     public Shoot shoot;
     public Collider playerCollider;
 
+    public bool recibeDamage = false;
+
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
@@ -41,6 +43,10 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
+        if(recibeDamage == true)
+        {
+            return;
+        }
         EnSuelo();
         if(playerActor.estaMuerto == true)
         {
@@ -54,6 +60,7 @@ public class PlayerController : MonoBehaviour
             transform.LookAt(new Vector3(collision.transform.position.x, transform.position.y, collision.transform.position.z));
             Debug.Log("Mira a enemigo");
             playerActor.DeleteHeart();
+            playerAnim.SetTrigger("Damage");
         }
     }
 

@@ -10,15 +10,15 @@ public class CuevaLightController : MonoBehaviour
     public Animator SpotLight2;
 
     float reduccion = 1;
-    bool Oscurece = false;
-    bool Amanece = false;
+    bool Oscurece;
+    bool Amanece;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        bool Oscurece = false;
-    bool Amanece = false;
+        Oscurece = false;
+        Amanece = false;
         RenderSettings.skybox.SetFloat("_Exposure", 1f);
     }
 
@@ -77,8 +77,6 @@ public class CuevaLightController : MonoBehaviour
             Amanece = true;
 
         }
-
-
     }
 
     private void OnApplicationQuit()

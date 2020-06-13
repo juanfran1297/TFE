@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Activar.cs" />
     <Compile Include="Assets\AnimationBehaviour.cs" />
+    <Compile Include="Assets\CocoController.cs" />
     <Compile Include="Assets\CuevaLightController.cs" />
     <Compile Include="Assets\MuerteBehaviour.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />

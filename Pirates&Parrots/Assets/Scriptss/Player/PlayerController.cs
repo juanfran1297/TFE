@@ -51,7 +51,8 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.transform.tag == "Enemy")
         {
-            transform.LookAt(collision.transform.position);
+            transform.LookAt(new Vector3(collision.transform.position.x, transform.position.y, collision.transform.position.z));
+            Debug.Log("Mira a enemigo");
             playerActor.DeleteHeart();
         }
     }

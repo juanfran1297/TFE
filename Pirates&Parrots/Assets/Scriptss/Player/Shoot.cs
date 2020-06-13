@@ -19,6 +19,7 @@ public class Shoot : MonoBehaviour
     public Transform balasInventory;
 
     public bool estaRecargando = false;
+    public bool estaDisparando = false;
 
     public int velocidadBala = 14;
 
@@ -28,6 +29,7 @@ public class Shoot : MonoBehaviour
     {
         numBalas = maxBalas;
         InstanciarBalas();
+        playerAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -40,8 +42,18 @@ public class Shoot : MonoBehaviour
 
         if(Input.GetButtonDown("Fire1") && numBalas > 0 && estaRecargando == false)
         {
-            Disparo();
-            //playerAnim.SetTrigger("Shoot");
+            if(Input.GetKey(KeyCode.W))
+            {
+                playerAnim.SetTrigger("ShootArriba");
+            }
+            else if(Input.GetKey(KeyCode.S)) 
+            {
+                playerAnim.SetTrigger("ShootAbajo");
+            }
+            else
+            {
+                playerAnim.SetTrigger("Shoot");
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -71,15 +83,15 @@ public class Shoot : MonoBehaviour
             var bullet = (GameObject)Instantiate(bulletPrefab, salidaDisparo.position, Quaternion.identity);
             if(Input.GetKey(KeyCode.W))
             {
-                bullet.GetComponent<Rigidbody>().velocity = -transform.up * velocidadBala;
+                bullet.GetComponent<Rigidbody>().velocity = transform.up * velocidadBala;
             }
             else if(Input.GetKey(KeyCode.S))
             {
-                bullet.GetComponent<Rigidbody>().velocity = transform.up * velocidadBala;
+                bullet.GetComponent<Rigidbody>().velocity = -transform.up * velocidadBala;
             }
             else
             {
-                bullet.GetComponent<Rigidbody>().velocity = -transform.forward * velocidadBala;
+                bullet.GetComponent<Rigidbody>().velocity = transform.forward * velocidadBala;
             }
             Destroy(bullet, 2.0f);
             numBalas--;

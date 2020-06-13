@@ -48,20 +48,15 @@ public class PajaroController : MonoBehaviour
     }
     void Update()
     {
-        
-        RaycastHit hit;
-        if(Physics.SphereCast(transform.position, 6f, transform.forward, out hit, 6f, playerLayer))
+        //RaycastHit hit;
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 6f, playerLayer);
+        if (hitColliders.Length > 0)
         {
-            if(hit.transform.tag == "Player")
-            {
-                player = hit.transform.gameObject;
-                Debug.Log("Se detecta al jugador");
-                isAttack = true;
-            }
+            player = hitColliders[0].transform.gameObject;
+            isAttack = true;
         }
         else
         {
-            Debug.Log("NO se detecta al jugador");
             isAttack = false;
         }
 

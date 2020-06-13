@@ -15,6 +15,8 @@ public class PlayerActor : Actor
 
     public Image lifeImagen;
     public Transform vidasInventory;
+    public Animator playerAnim;
+    public bool estaMuerto;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,8 @@ public class PlayerActor : Actor
         maxVida = 3;
         numVidas = maxVida;
         InstanciarVidas();
+        playerAnim = GetComponent<Animator>();
+        estaMuerto = false;
     }
 
     // Update is called once per frame
@@ -53,7 +57,8 @@ public class PlayerActor : Actor
 
         if (numVidas <= 0)
         {
-            SceneManager.LoadScene("Final");
+            playerAnim.SetTrigger("Muerte");
+            estaMuerto = true;
         }
     }
     public void InstanciarVidas()

@@ -24,6 +24,8 @@ public class SirenoController : MonoBehaviour
     public float detectionRange;
 
     public Animator sirenoAnim;
+
+    public float contador;
     private void Start()
     {
         isAttack = false;
@@ -32,6 +34,7 @@ public class SirenoController : MonoBehaviour
         sirenoAnim = GetComponent<Animator>();
 
         attackSpeed = 5f;
+        contador = 2f;
     }
 
     void GotoNextPoint()
@@ -86,7 +89,20 @@ public class SirenoController : MonoBehaviour
 
         if (Vector3.Distance(player, transform.position) < 3f)
         {
-            sirenoAnim.SetTrigger("Ataque");
+            if (contador >= 2)
+            {
+                isAttack = true;
+                speed = 0f;
+                sirenoAnim.SetTrigger("Ataque");
+                contador = 0;
+            }
+        }
+        else speed = 2f;
+
+        if (contador < 2)
+        {
+            contador = contador + Time.deltaTime;
+            isAttack = false;
         }
     }
 }

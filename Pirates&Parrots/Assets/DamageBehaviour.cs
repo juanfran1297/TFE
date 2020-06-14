@@ -8,7 +8,7 @@ public class DamageBehaviour : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         FindObjectOfType<PlayerController>().recibeDamage = true;
-        FindObjectOfType<PlayerController>().rigidBody.AddForce(new Vector3(-100f, 0, 0), ForceMode.Impulse);
+        FindObjectOfType<PlayerController>().rigidBody.AddForce(new Vector3(-200f, 0, 0), ForceMode.Impulse);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

@@ -18,4 +18,19 @@ public class PlatanoController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.transform.tag == "Player")
+        {
+            FindObjectOfType<PlayerActor>().DeleteHeart();
+            Destroy(gameObject);
+        }
+
+        if (other.transform.tag == "Bala")
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+    }
 }

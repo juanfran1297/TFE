@@ -24,6 +24,7 @@ public class CocoController : MonoBehaviour
     public float detectionRange;
 
     public Animator cocoAnim;
+    public float contador;
     private void Start()
     {
         isAttack = false;
@@ -33,6 +34,7 @@ public class CocoController : MonoBehaviour
 
         speed = 2f;
         attackSpeed = 5f;
+        contador = 2f;
     }
 
     void GotoNextPoint()
@@ -87,9 +89,20 @@ public class CocoController : MonoBehaviour
 
         if (Vector3.Distance(player, transform.position) < 3f)
         {
-            speed = 0f;
-            cocoAnim.SetTrigger("Ataque");
+            if (contador >= 2)
+            {
+                isAttack = true;
+                speed = 0f;
+                cocoAnim.SetTrigger("Ataque");
+                contador = 0;
+            }
         }
         else speed = 2f;
+
+        if (contador < 2)
+        {
+            contador = contador + Time.deltaTime;
+            isAttack = false;
+        }
     }
 }

@@ -80,7 +80,11 @@ public class PlayerController : MonoBehaviour
     #region EnSuelo
     private void EnSuelo()
     {
-        if (recibeDamage == false)
+        if(recibeDamage == true)
+        {
+            return;
+        }
+        else if (recibeDamage == false)
         {
             #region Salto
             Debug.DrawRay(groundCheck.position, Vector3.down, Color.green);

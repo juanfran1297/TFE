@@ -85,9 +85,11 @@ public class CocoController : MonoBehaviour
             cocoAnim.SetBool("VistaPlayer", true);
         }
 
-        if(Vector3.Distance(player, transform.position) < 3f)
+        if (Vector3.Distance(player, transform.position) < 3f)
         {
+            speed = 0f;
             cocoAnim.SetTrigger("Ataque");
         }
+        else speed = 2f;
     }
 }

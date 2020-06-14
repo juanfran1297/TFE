@@ -31,6 +31,8 @@ public class PlayerController : MonoBehaviour
 
     public bool recibeDamage = false;
 
+    public AudioSource audioPasos;
+
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
@@ -138,6 +140,15 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
+    public void SoundOn()
+    {
+        audioPasos.Play();
+    }
+
+    public void SoundOff()
+    {
+        audioPasos.Stop();
+    }
     //#region CosasDeRampas
     //public void PegarSuelo()
     //{

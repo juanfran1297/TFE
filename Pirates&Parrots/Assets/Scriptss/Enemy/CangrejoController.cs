@@ -5,44 +5,54 @@ using UnityEngine.AI;
 
 public class CangrejoController : MonoBehaviour
 {
-    public Transform[] points;
-    private int destPoint = 0;
-    private NavMeshAgent agent;
+    // Adjust the speed for the application.
+    public float speed;
+    // Move our position a step closer to the target.
+    float step;
 
+    // The target (cylinder) position.
+    public Transform[] targets;
+    public int destTarget = 0;
 
-    void Start()
+    private void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        step = speed * Time.deltaTime; // calculate distance to move
 
-        // Disabling auto-braking allows for continuous movement
-        // between points (ie, the agent doesn't slow down as it
-        // approaches a destination point).
-        agent.autoBraking = false;
-
-        GotoNextPoint();
+        speed = 2f;
     }
-
 
     void GotoNextPoint()
     {
         // Returns if no points have been set up
-        if (points.Length == 0)
+        if (targets.Length == 0)
             return;
-
-        // Set the agent to go to the currently selected destination.
-        agent.destination = points[destPoint].position;
 
         // Choose the next point in the array as the destination,
         // cycling to the start if necessary.
-        destPoint = (destPoint + 1) % points.Length;
+        destTarget = (destTarget + 1) % targets.Length;
     }
-
 
     void Update()
     {
-        // Choose the next destination point when the agent gets
-        // close to the current one.
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        // Set the agent to go to the currently selected destination.
+        transform.position = Vector3.MoveTowards(transform.position, targets[destTarget].position, step);
+
+        // Check if the position of the cube and sphere are approximately equal.
+        if (Vector3.Distance(transform.position, targets[destTarget].position) < 0.001f)
+        {
             GotoNextPoint();
+        }
+
+        //if(destTarget == 0)
+        //{
+
+        //}
+        //else if(destTarget == 1)
+        //{
+
+        //}
     }
 }
+
+    
+

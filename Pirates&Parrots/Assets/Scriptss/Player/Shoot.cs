@@ -25,6 +25,8 @@ public class Shoot : MonoBehaviour
 
     public Animator playerAnim;
 
+    public AudioSource audioDisparo;
+
     private void Start()
     {
         numBalas = maxBalas;
@@ -144,6 +146,11 @@ public class Shoot : MonoBehaviour
         yield return new WaitForSeconds(1.1f);
         Bullets[maxBalas - 1] = Instantiate(balaImage, balasInventory, false);
 
+    }
+
+    public void Sonido()
+    {
+        audioDisparo.Play();
     }
 }
 

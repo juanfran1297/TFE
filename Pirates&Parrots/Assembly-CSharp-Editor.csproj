@@ -63,12 +63,134 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scriptss\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
-    <Compile Include="Assets\Scriptss\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
-    <Compile Include="Assets\Scriptss\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
-    <Compile Include="Assets\Scriptss\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
-    <Compile Include="Assets\Scriptss\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
-    <Compile Include="Assets\Scriptss\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
+    <Compile Include="Assets\Editor\AbstractTargetFollower.cs" />
+    <Compile Include="Assets\Editor\ActivadorAnimacion.cs" />
+    <Compile Include="Assets\Editor\Activar.cs" />
+    <Compile Include="Assets\Editor\ActivateTrigger.cs" />
+    <Compile Include="Assets\Editor\Actor.cs" />
+    <Compile Include="Assets\Editor\AfterburnerPhysicsForce.cs" />
+    <Compile Include="Assets\Editor\AICharacterControl.cs" />
+    <Compile Include="Assets\Editor\AlphaButtonClickMask.cs" />
+    <Compile Include="Assets\Editor\AnimationBehaviour.cs" />
+    <Compile Include="Assets\Editor\AutoCam.cs" />
+    <Compile Include="Assets\Editor\AutoMobileShaderSwitch.cs" />
+    <Compile Include="Assets\Editor\AutoMoveAndRotate.cs" />
+    <Compile Include="Assets\Editor\AxisTouchButton.cs" />
+    <Compile Include="Assets\Editor\BalaCollider.cs" />
+    <Compile Include="Assets\Editor\Ball.cs" />
+    <Compile Include="Assets\Editor\BallUserControl.cs" />
+    <Compile Include="Assets\Editor\ButtonController.cs" />
+    <Compile Include="Assets\Editor\ButtonHandler.cs" />
+    <Compile Include="Assets\Editor\CameraBehaviour.cs" />
+    <Compile Include="Assets\Editor\CameraBehaviour2.cs" />
+    <Compile Include="Assets\Editor\CameraRefocus.cs" />
+    <Compile Include="Assets\Editor\CamerasController.cs" />
+    <Compile Include="Assets\Editor\CameraSwitch.cs" />
+    <Compile Include="Assets\Editor\CaminarBehaviour.cs" />
+    <Compile Include="Assets\Editor\CangrejoController.cs" />
+    <Compile Include="Assets\Editor\CargarMenu.cs" />
+    <Compile Include="Assets\Editor\CerrarTexto.cs" />
+    <Compile Include="Assets\Editor\CharacterMovement.cs" />
+    <Compile Include="Assets\Editor\CocoController.cs" />
+    <Compile Include="Assets\Editor\CocoDistanciaController.cs" />
+    <Compile Include="Assets\Editor\ControlBotonPuerta.cs" />
+    <Compile Include="Assets\Editor\ControlesTexto.cs" />
+    <Compile Include="Assets\Editor\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Editor\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\Editor\CuevaLightController.cs" />
+    <Compile Include="Assets\Editor\CurveControlledBob.cs" />
+    <Compile Include="Assets\Editor\DamageBehaviour.cs" />
+    <Compile Include="Assets\Editor\Displace.cs" />
+    <Compile Include="Assets\Editor\DragRigidbody.cs" />
+    <Compile Include="Assets\Editor\DynamicShadowSettings.cs" />
+    <Compile Include="Assets\Editor\EnemyActor.cs" />
+    <Compile Include="Assets\Editor\EventSystemChecker.cs" />
+    <Compile Include="Assets\Editor\ExplosionFireAndDebris.cs" />
+    <Compile Include="Assets\Editor\ExplosionPhysicsForce.cs" />
+    <Compile Include="Assets\Editor\Explosive.cs" />
+    <Compile Include="Assets\Editor\ExtinguishableParticleSystem.cs" />
+    <Compile Include="Assets\Editor\FinalBehaviour.cs" />
+    <Compile Include="Assets\Editor\FireLight.cs" />
+    <Compile Include="Assets\Editor\FirstPersonController.cs" />
+    <Compile Include="Assets\Editor\FixedTiling.cs" />
+    <Compile Include="Assets\Editor\FollowPlayer.cs" />
+    <Compile Include="Assets\Editor\FollowTarget.cs" />
+    <Compile Include="Assets\Editor\ForcedReset.cs" />
+    <Compile Include="Assets\Editor\FOVKick.cs" />
+    <Compile Include="Assets\Editor\FPSCounter.cs" />
+    <Compile Include="Assets\Editor\FreeLookCam.cs" />
+    <Compile Include="Assets\Editor\GerstnerDisplace.cs" />
+    <Compile Include="Assets\Editor\GerstnerDisplaceEditor.cs" />
+    <Compile Include="Assets\Editor\HandHeldCam.cs" />
+    <Compile Include="Assets\Editor\HeadBob.cs" />
+    <Compile Include="Assets\Editor\Hose.cs" />
+    <Compile Include="Assets\Editor\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\Editor\Joystick.cs" />
+    <Compile Include="Assets\Editor\LerpControlledBob.cs" />
+    <Compile Include="Assets\Editor\LevelReset.cs" />
+    <Compile Include="Assets\Editor\LookatTarget.cs" />
+    <Compile Include="Assets\Editor\MenuSceneLoader.cs" />
+    <Compile Include="Assets\Editor\MeshContainer.cs" />
+    <Compile Include="Assets\Editor\MobileControlRig.cs" />
+    <Compile Include="Assets\Editor\MobileInput.cs" />
+    <Compile Include="Assets\Editor\MouseLook.cs" />
+    <Compile Include="Assets\Editor\MuerteBehaviour.cs" />
+    <Compile Include="Assets\Editor\MuertePlayer.cs" />
+    <Compile Include="Assets\Editor\ObjectResetter.cs" />
+    <Compile Include="Assets\Editor\OutZoomCamera.cs" />
+    <Compile Include="Assets\Editor\PajaroController.cs" />
+    <Compile Include="Assets\Editor\ParticleSceneControls.cs" />
+    <Compile Include="Assets\Editor\ParticleSystemDestroyer.cs" />
+    <Compile Include="Assets\Editor\ParticleSystemMultiplier.cs" />
+    <Compile Include="Assets\Editor\PauseMenu.cs" />
+    <Compile Include="Assets\Editor\PivotBasedCameraRig.cs" />
+    <Compile Include="Assets\Editor\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\Editor\PlanarReflection.cs" />
+    <Compile Include="Assets\Editor\PlanarReflectionEditor.cs" />
+    <Compile Include="Assets\Editor\PlatanoController.cs" />
+    <Compile Include="Assets\Editor\Platform.cs" />
+    <Compile Include="Assets\Editor\PlatformMove.cs" />
+    <Compile Include="Assets\Editor\PlatformSpecificContent.cs" />
+    <Compile Include="Assets\Editor\PlayerActor.cs" />
+    <Compile Include="Assets\Editor\PlayerController.cs" />
+    <Compile Include="Assets\Editor\PlayerMove.cs" />
+    <Compile Include="Assets\Editor\PopUpText.cs" />
+    <Compile Include="Assets\Editor\ProtectCameraFromWallClip.cs" />
+    <Compile Include="Assets\Editor\RecogerColeccionable.cs" />
+    <Compile Include="Assets\Editor\RigidbodyFirstPersonController.cs" />
+    <Compile Include="Assets\Editor\Rompible.cs" />
+    <Compile Include="Assets\Editor\SceneAndURLLoader.cs" />
+    <Compile Include="Assets\Editor\Shoot.cs" />
+    <Compile Include="Assets\Editor\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\Editor\SimpleMouseRotator.cs" />
+    <Compile Include="Assets\Editor\SirenoController.cs" />
+    <Compile Include="Assets\Editor\SkyboxRotation.cs" />
+    <Compile Include="Assets\Editor\SlowMoButton.cs" />
+    <Compile Include="Assets\Editor\SmokeParticles.cs" />
+    <Compile Include="Assets\Editor\SmoothFollow.cs" />
+    <Compile Include="Assets\Editor\SpecularLighting.cs" />
+    <Compile Include="Assets\Editor\SpecularLightingEditor.cs" />
+    <Compile Include="Assets\Editor\StandaloneInput.cs" />
+    <Compile Include="Assets\Editor\TargetFieldOfView.cs" />
+    <Compile Include="Assets\Editor\TentaculosBehaviour.cs" />
+    <Compile Include="Assets\Editor\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\Editor\ThirdPersonUserControl.cs" />
+    <Compile Include="Assets\Editor\TiltInput.cs" />
+    <Compile Include="Assets\Editor\TimedObjectActivator.cs" />
+    <Compile Include="Assets\Editor\TimedObjectDestructor.cs" />
+    <Compile Include="Assets\Editor\TouchPad.cs" />
+    <Compile Include="Assets\Editor\VidaPlayer.cs" />
+    <Compile Include="Assets\Editor\VirtualInput.cs" />
+    <Compile Include="Assets\Editor\Water.cs" />
+    <Compile Include="Assets\Editor\WaterBase.cs" />
+    <Compile Include="Assets\Editor\WaterBaseEditor.cs" />
+    <Compile Include="Assets\Editor\WaterBasic.cs" />
+    <Compile Include="Assets\Editor\WaterEditorUtility.cs" />
+    <Compile Include="Assets\Editor\WaterHoseParticles.cs" />
+    <Compile Include="Assets\Editor\WaterScroller.cs" />
+    <Compile Include="Assets\Editor\WaterTile.cs" />
+    <Compile Include="Assets\Editor\WaypointCircuit.cs" />
+    <Compile Include="Assets\Editor\WaypointProgressTracker.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
@@ -113,6 +235,9 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -290,6 +415,9 @@
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>D:/TFE/Pirates&amp;Parrots/Library/ScriptAssemblies/Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.VR">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
@@ -672,12 +800,6 @@
     <Reference Include="Boo.Lang">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{0451D66F-F047-BC93-0ECB-EBA9D4471FB1}</Project>
-      <Name>Assembly-CSharp</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

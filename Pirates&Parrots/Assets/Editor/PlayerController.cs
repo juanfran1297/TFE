@@ -1,0 +1,162 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Assertions.Must;
+
+public class PlayerController : MonoBehaviour
+{
+    public Rigidbody rigidBody;
+    public float speed;
+    public float jumpSpeed;
+
+    public Transform groundCheck;
+    public float groundDistance = .4f;
+    public float slopeDistance = 2f;
+
+    public bool canJump;
+
+    public float speedRotation;
+    private Quaternion q;
+    private Vector3 targetRotation;
+
+    public LayerMask slopeRight;
+    public LayerMask slopeLeft;
+    public bool isSlopeRight = false;
+    public bool isSlopeLeft = false;
+    public Animator playerAnim;
+
+    public PlayerActor playerActor;
+    public Shoot shoot;
+    public Collider playerCollider;
+
+    public bool recibeDamage = false;
+
+    public AudioSource audioPasos;
+
+    void Start()
+    {
+        rigidBody = GetComponent<Rigidbody>();
+        targetRotation = new Vector3(0, 90, 0);
+        q = Quaternion.Euler(targetRotation);
+        playerAnim = GetComponent<Animator>();
+        shoot = GetComponent<Shoot>();
+        playerActor = GetComponent<PlayerActor>();
+        playerCollider = GetComponent<Collider>();
+    }
+    private void Update()
+    {
+        EnSuelo();
+
+        if(playerActor.estaMuerto == true)
+        {
+            rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "Enemy")
+        {
+            if (recibeDamage != true)
+            {
+                transform.LookAt(new Vector3(collision.transform.localPosition.x, transform.position.y, collision.transform.localPosition.z));
+                Vector3 dir = new Vector3(collision.transform.position.x - transform.position.x, 0, 0);
+                dir = -dir.normalized;
+                rigidBody.AddForce((dir * 50f), ForceMode.Impulse);
+                Debug.Log("Mira a enemigo");
+                playerActor.DeleteHeart();
+                playerAnim.SetTrigger("Damage");
+            }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if(shoot.estaDisparando == true || playerActor.estaMuerto == true || recibeDamage == true)
+        {
+            float mH = Input.GetAxis("Horizontal");
+            rigidBody.velocity = new Vector2(mH * 0, rigidBody.velocity.y);
+        }
+        else
+        {
+            float mH = Input.GetAxis("Horizontal");
+            rigidBody.velocity = new Vector2(mH * speed, rigidBody.velocity.y);
+        }
+    }
+
+    #region EnSuelo
+    private void EnSuelo()
+    {
+        if(recibeDamage == true)
+        {
+            return;
+        }
+        else if (recibeDamage == false)
+        {
+            #region Salto
+            Debug.DrawRay(groundCheck.position, Vector3.down, Color.green);
+            RaycastHit hit;
+            if (Physics.Raycast(groundCheck.position, Vector3.down, out hit, groundDistance))
+            {
+                canJump = true;
+                playerAnim.SetBool("PuedeSaltar", true);
+            }
+            else
+            {
+                canJump = false;
+                playerAnim.SetBool("PuedeSaltar", false);
+            }
+            #endregion
+
+            #region Rotación
+
+            if (Input.GetAxis("Horizontal") > 0)
+            {
+                targetRotation = new Vector3(0, 90, 0);
+                q = Quaternion.Euler(targetRotation);
+                playerAnim.SetFloat("movH", Input.GetAxis("Horizontal"));
+                playerAnim.SetBool("estoyAndando", true);
+            }
+            else if ((Input.GetAxis("Horizontal") < 0))
+            {
+                targetRotation = new Vector3(0, -90, 0);
+                q = Quaternion.Euler(targetRotation);
+                playerAnim.SetFloat("movH", -Input.GetAxis("Horizontal"));
+                playerAnim.SetBool("estoyAndando", true);
+            }
+            else if ((Input.GetAxis("Horizontal") == 0))
+            {
+                playerAnim.SetBool("estoyAndando", false);
+            }
+
+            transform.rotation = Quaternion.Lerp(transform.rotation, q, speedRotation * Time.deltaTime);
+            #endregion
+
+            #region Salto
+            if (canJump)
+            {
+                if (isSlopeRight || isSlopeLeft)
+                {
+                    return;
+                }
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    rigidBody.AddForce(new Vector3(0, jumpSpeed, 0), ForceMode.Impulse);
+                    playerAnim.SetTrigger("Salto");
+                }
+            }
+            #endregion
+        }
+        //Rampas();
+    }
+    #endregion
+
+    public void SoundOn()
+    {
+        audioPasos.Play();
+    }
+
+    public void SoundOff()
+    {
+        audioPasos.Stop();
+    }
+}

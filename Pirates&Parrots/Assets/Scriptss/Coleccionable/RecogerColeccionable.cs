@@ -8,7 +8,7 @@ public class RecogerColeccionable : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            FindObjectOfType<PlayerActor>().AddHeart();
+            FindObjectOfType<PlayerActor>().ConseguirUnaVida();
             Destroy(this.gameObject);
         }
     }

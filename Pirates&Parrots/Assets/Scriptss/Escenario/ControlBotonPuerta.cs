@@ -21,8 +21,8 @@ public class ControlBotonPuerta : MonoBehaviour
         {
             AbrirPuerta();
             estaAbierta = true;
+            Destroy(other.gameObject);
         }
-        Destroy(other.gameObject);
     }
 
     void AbrirPuerta()

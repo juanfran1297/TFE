@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -32,24 +33,6 @@ public class PlayerActor : Actor
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            if (maxVida < Lifes.Capacity)
-            {
-                maxVida++;
-                numVidas = maxVida;
-                AddHeart();
-                for (int i = 0; i < numVidas; i++)
-                {
-                    Lifes[i].enabled = true;
-                }
-            }
-            else
-            {
-                Debug.Log("No se puede tener más vidas");
-            }
-        }
-
         if (numVidas == maxVida)
         {
             VidaAlMaximo = true;
@@ -81,6 +64,22 @@ public class PlayerActor : Actor
         for (int i = numVidas; i >= numVidas; i--)
         {
             Lifes[i].enabled = false;
+        }
+    }
+
+    public void ConseguirUnaVida()
+    {
+        if (numVidas < maxVida)
+        {
+            numVidas++;
+            for (int i = 0; i < numVidas; i++)
+            {
+                Lifes[i].enabled = true;
+            }
+        }
+        else if(numVidas >= maxVida)
+        {
+            Debug.Log("No se puede tener más vidas");
         }
     }
 }

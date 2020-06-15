@@ -23,8 +23,8 @@ public class PlatanoController : MonoBehaviour
     {
         if (other.transform.tag == "Player")
         {
-            FindObjectOfType<PlayerActor>().DeleteHeart();
             Destroy(gameObject);
+            FindObjectOfType<PlayerActor>().DeleteHeart();
         }
 
         if (other.transform.tag == "Bala")

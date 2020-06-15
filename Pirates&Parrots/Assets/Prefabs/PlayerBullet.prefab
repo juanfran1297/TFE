@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7985453987659636624}
   - component: {fileID: 9090725865347187233}
   - component: {fileID: 6552956444942234039}
+  - component: {fileID: 9210649145660921400}
   m_Layer: 8
   m_Name: PlayerBullet
   m_TagString: Bala
@@ -109,3 +110,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &9210649145660921400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2157073578106475217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c046723607c83c342af5ac3c6880d28f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

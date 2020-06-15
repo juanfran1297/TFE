@@ -11,7 +11,7 @@ public class CamerasController : MonoBehaviour
     void Start()
     {
         animatorCamera.SetActive(true);
-        mainCamera.SetActive(false);
+        
 
     }
 
@@ -19,7 +19,8 @@ public class CamerasController : MonoBehaviour
     
     public void cambioCamera()
     {
+        
         animatorCamera.SetActive(false);
-        mainCamera.SetActive(true);
+        
     }
 }

@@ -28,7 +28,7 @@ public class CocoController : MonoBehaviour
         cocoAnim = GetComponent<Animator>();
 
         speed = 2f;
-        attackSpeed = 5f;
+        attackSpeed = 3f;
         contador = 2f;
     }
 

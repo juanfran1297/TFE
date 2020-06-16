@@ -27,7 +27,7 @@ public class PajaroController : MonoBehaviour
         pajaroAnim = GetComponent<Animator>();
 
         speed = 3f;
-        attackSpeed = 5f;
+        attackSpeed = 4f;
     }
 
     void GotoNextPoint()

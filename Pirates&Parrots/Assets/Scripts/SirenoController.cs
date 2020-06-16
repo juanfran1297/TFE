@@ -28,7 +28,7 @@ public class SirenoController : MonoBehaviour
         isAttack = false;
         sirenoAnim = GetComponent<Animator>();
 
-        attackSpeed = 5f;
+        attackSpeed = 3f;
         contador = 2f;
     }
 

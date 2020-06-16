@@ -95,7 +95,6 @@
     <Compile Include="Assets\Scripts\CocoDistanciaController.cs" />
     <Compile Include="Assets\Scripts\ControlBotonPuerta.cs" />
     <Compile Include="Assets\Scripts\ControlesTexto.cs" />
-    <Compile Include="Assets\Scripts\CrossPlatformInputInitialize.cs" />
     <Compile Include="Assets\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\Scripts\CuevaLightController.cs" />
     <Compile Include="Assets\Scripts\CurveControlledBob.cs" />
@@ -119,7 +118,6 @@
     <Compile Include="Assets\Scripts\FPSCounter.cs" />
     <Compile Include="Assets\Scripts\FreeLookCam.cs" />
     <Compile Include="Assets\Scripts\GerstnerDisplace.cs" />
-    <Compile Include="Assets\Scripts\GerstnerDisplaceEditor.cs" />
     <Compile Include="Assets\Scripts\HandHeldCam.cs" />
     <Compile Include="Assets\Scripts\Hose.cs" />
     <Compile Include="Assets\Scripts\InputAxisScrollbar.cs" />
@@ -144,7 +142,6 @@
     <Compile Include="Assets\Scripts\PivotBasedCameraRig.cs" />
     <Compile Include="Assets\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\Scripts\PlanarReflection.cs" />
-    <Compile Include="Assets\Scripts\PlanarReflectionEditor.cs" />
     <Compile Include="Assets\Scripts\PlatanoController.cs" />
     <Compile Include="Assets\Scripts\Platform.cs" />
     <Compile Include="Assets\Scripts\PlatformMove.cs" />
@@ -166,7 +163,6 @@
     <Compile Include="Assets\Scripts\SmokeParticles.cs" />
     <Compile Include="Assets\Scripts\SmoothFollow.cs" />
     <Compile Include="Assets\Scripts\SpecularLighting.cs" />
-    <Compile Include="Assets\Scripts\SpecularLightingEditor.cs" />
     <Compile Include="Assets\Scripts\StandaloneInput.cs" />
     <Compile Include="Assets\Scripts\TargetFieldOfView.cs" />
     <Compile Include="Assets\Scripts\TentaculosBehaviour.cs" />
@@ -180,9 +176,7 @@
     <Compile Include="Assets\Scripts\VirtualInput.cs" />
     <Compile Include="Assets\Scripts\Water.cs" />
     <Compile Include="Assets\Scripts\WaterBase.cs" />
-    <Compile Include="Assets\Scripts\WaterBaseEditor.cs" />
     <Compile Include="Assets\Scripts\WaterBasic.cs" />
-    <Compile Include="Assets\Scripts\WaterEditorUtility.cs" />
     <Compile Include="Assets\Scripts\WaterHoseParticles.cs" />
     <Compile Include="Assets\Scripts\WaterScroller.cs" />
     <Compile Include="Assets\Scripts\WaterTile.cs" />

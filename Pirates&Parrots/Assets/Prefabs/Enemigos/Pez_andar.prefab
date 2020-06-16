@@ -947,7 +947,7 @@ GameObject:
   - component: {fileID: 2656434249068430334}
   - component: {fileID: 2656434249068430329}
   - component: {fileID: 2656434249068430332}
-  - component: {fileID: 2656434249068430335}
+  - component: {fileID: 3030279360445689930}
   m_Layer: 0
   m_Name: Pez_andar
   m_TagString: Enemy
@@ -1030,28 +1030,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6340050084653868714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c043c72bb3ad4ba4e8263947049f9c43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxVida: 2
-  enemyAnim: {fileID: 0}
---- !u!114 &2656434249068430335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6340050084653868714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc44e87fd70c80e47b3d130c8677e58d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b71006b6796f0640a59050357012c2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
   attackSpeed: 5
-  targets:
-  - {fileID: 0}
-  - {fileID: 0}
+  targets: []
   destTarget: 0
   isAttack: 0
   player: {x: 0, y: 0, z: 0}
@@ -1062,6 +1046,20 @@ MonoBehaviour:
   detectionRange: 3
   sirenoAnim: {fileID: 0}
   contador: 0
+--- !u!114 &3030279360445689930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6340050084653868714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f19fc40d83f1d14ba6dd9ec8133fc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVida: 2
+  enemyAnim: {fileID: 0}
 --- !u!1 &6393747067136770330
 GameObject:
   m_ObjectHideFlags: 0

@@ -1250,14 +1250,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6246673534322630250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73feaefa001bbd045af90d40f39ac532, type: 3}
+  m_Script: {fileID: 11500000, guid: b35d95d00eab5604bb4d504b603e6cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
   attackSpeed: 5
-  targets:
-  - {fileID: 0}
-  - {fileID: 0}
+  targets: []
   destTarget: 0
   isAttack: 0
   player: {x: 0, y: 0, z: 0}
@@ -1265,7 +1263,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 512
-  detectionRange: 2.58
+  detectionRange: 4
   cocoAnim: {fileID: 0}
   contador: 0
 --- !u!114 &2707025586510500526
@@ -1277,7 +1275,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6246673534322630250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c043c72bb3ad4ba4e8263947049f9c43, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f19fc40d83f1d14ba6dd9ec8133fc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxVida: 2

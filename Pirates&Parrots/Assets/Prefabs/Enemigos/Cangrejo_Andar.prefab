@@ -794,14 +794,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2381038457461723896}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c64ce685adb6070469e6e1cad935d21c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f19fc40d83f1d14ba6dd9ec8133fc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  targets:
-  - {fileID: 0}
-  - {fileID: 0}
-  destTarget: 0
+  maxVida: 2
+  enemyAnim: {fileID: 0}
 --- !u!114 &5920765434111029567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -811,11 +808,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2381038457461723896}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c043c72bb3ad4ba4e8263947049f9c43, type: 3}
+  m_Script: {fileID: 11500000, guid: 3863dc6628404e14eb49786cff8f05c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxVida: 2
-  enemyAnim: {fileID: 0}
+  speed: 3
+  targets: []
+  destTarget: 0
 --- !u!1 &2473532578378227469
 GameObject:
   m_ObjectHideFlags: 0

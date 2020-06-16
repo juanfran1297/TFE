@@ -342,14 +342,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4001570319997468407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d09e71384c5d6249b6fc878eb9e65d9, type: 3}
+  m_Script: {fileID: 11500000, guid: d3315dbad87163a4bb565f6ab6b94833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
   attackSpeed: 5
-  targets:
-  - {fileID: 0}
-  - {fileID: 0}
+  targets: []
   destTarget: 0
   isAttack: 0
   player: {x: 0, y: 0, z: 0}
@@ -368,7 +366,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4001570319997468407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c043c72bb3ad4ba4e8263947049f9c43, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f19fc40d83f1d14ba6dd9ec8133fc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxVida: 1

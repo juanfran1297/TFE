@@ -710,14 +710,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 2708521504840730953}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c71db8b894f55ad4e80443c7b8d6601e, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f19fc40d83f1d14ba6dd9ec8133fc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVida: 2
+  enemyAnim: {fileID: 0}
+--- !u!114 &6248591527830596350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2708521504840730953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d200cffa3e82dd6439cf9290e8435f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
   attackSpeed: 5
-  targets:
-  - {fileID: 0}
-  - {fileID: 0}
+  targets: []
   destTarget: 0
   isAttack: 0
   player: {x: 0, y: 0, z: 0}
@@ -732,20 +744,6 @@ MonoBehaviour:
     type: 3}
   salidaDisparo: {fileID: 6248591527866284102}
   velocidadPlatano: 5
---- !u!114 &6248591527830596350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2708521504840730953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c043c72bb3ad4ba4e8263947049f9c43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxVida: 2
-  enemyAnim: {fileID: 0}
 --- !u!1 &2866117507538992713
 GameObject:
   m_ObjectHideFlags: 0
